@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
 				monochrome = true,
 				features = "src/test/java/Cucumber_v4_8_0/Features",
 				glue = {"Cucumber_v4_8_0/Implementation"},
-				tags = {"@Baba1 or Baba2"},
+				tags = {"@int"},
 				plugin = {
 				"progress",
 //				"summary",

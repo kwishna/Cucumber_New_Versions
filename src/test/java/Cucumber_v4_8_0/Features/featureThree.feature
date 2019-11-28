@@ -26,7 +26,14 @@ Then User Enters Search Keyword '<keyword>' and "this"
 And Hits Search Bar
 Then Search Results Should Appear
 
+@dev
 Examples:
 | url | keyword |
 | https://google.com | SCO Meet |
 | https://google.com | G7 Summit |
+
+@int
+Examples:
+| url | keyword |
+| https://google.co.in | SCO Meet |
+| https://google.co.in | G7 Summit |
