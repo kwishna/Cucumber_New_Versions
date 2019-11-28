@@ -11,8 +11,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
 				monochrome = true,
 				features = "src/test/java/Cucumber_v4_7_2/Features",
-				glue = {"Cucumber_v4_7_2/Implementation"},
-				extraGlue = "Cucumber_v4_8_0\\Hooks",
+				glue = {"Cucumber_v4_8_0/Implementation", "Cucumber_v4_8_0/Hooks"},
 				tags = {"@Baba1 or Baba2"},
 				plugin = {
 				"progress",

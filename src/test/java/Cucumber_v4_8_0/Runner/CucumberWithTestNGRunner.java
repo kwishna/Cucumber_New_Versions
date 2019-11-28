@@ -11,9 +11,8 @@ import org.testng.annotations.DataProvider;
 				strict = true,
 				monochrome = true,
 				features = "src/test/java/Cucumber_v4_8_0/Features",
-				glue = {"Cucumber_v4_8_0/Implementation"},
-				extraGlue = "Cucumber_v4_8_0\\Hooks",
-				tags = {"@Baba"},
+				glue = {"Cucumber_v4_8_0/Implementation", "Cucumber_v4_8_0/Hooks"},
+				tags = {"@Baba3"},
 				plugin = {
 						"progress",
 						"summary",

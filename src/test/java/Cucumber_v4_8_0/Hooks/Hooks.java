@@ -9,17 +9,17 @@ public class Hooks {
 
 	@After(order = 1)
 	public void after1(Scenario s){
-		System.out.println("After Each Scenario");
+		System.out.println("After Each Scenario order1");
 	}
 
 	@After(order = 2)
 	public void after2(Scenario s){
-		System.out.println("After Each Scenario");
+		System.out.println("After Each Scenario order2");
 	}
 
-	@Before(order = 1)
+	@Before("@int")
 	public void before1(Scenario s){
-		System.out.println("Before Each Scenario");
+		System.out.println("Before Each Scenario @int");
 	}
 
 	@AfterStep

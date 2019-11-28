@@ -2,17 +2,14 @@ package Cucumber_v4_8_0.Implementation;
 
 import Pages.PageOne;
 
-import io.cucumber.core.api.Scenario;
 import io.cucumber.datatable.DataTable;
-import io.cucumber.java.After;
-import io.cucumber.java.BeforeStep;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class Implementation {
-
-	/*PageOne one;
+/*
+	PageOne one;
 
 	@Given("User Browser Opens")
 	public void user_Browser_Opens(DataTable table) {
@@ -45,5 +42,10 @@ public class Implementation {
 	public void search_Results_Should_Appear() {
 		System.out.println("search_Results_Should_Appear ");
 		one.verifyResultCount();
+	}
+
+	@Given("My Name Is {string} And Email Is email")
+	public void test(String rowNum, DataTable table){
+		System.out.println(table.asList().get(Integer.parseInt(rowNum)));
 	}*/
 }

@@ -37,3 +37,18 @@ Examples:
 | url | keyword |
 | https://google.co.in | SCO Meet |
 | https://google.co.in | G7 Summit |
+
+@Baba3
+Scenario Outline: This Is The Third Scenario.
+  Given My Name Is '<rowNum>' And Email Is email
+  |email|
+  |gfhgf1@dfdg.cpm |
+  |gfhgf2@dfdg.cpm |
+  |gfhgf3@dfdg.cpm |
+
+
+Examples:
+	|rowNum|
+	|  0   |
+	|  1   |
+	|  2   |

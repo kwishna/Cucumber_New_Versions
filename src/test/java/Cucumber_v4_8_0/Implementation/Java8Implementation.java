@@ -1,10 +1,16 @@
 package Cucumber_v4_8_0.Implementation;
 
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java8.En;
 
 public class Java8Implementation implements En {
 
 	public Java8Implementation() {
+
+		Given("My Name Is {string} And Email Is email", (String rowNum, DataTable table) -> {
+
+			System.out.println(table.asList().get(Integer.parseInt(rowNum)));
+		});
 
 		Given("User Browser Opens", (io.cucumber.datatable.DataTable dataTable) -> {
 
