@@ -13,7 +13,8 @@ import org.junit.runner.RunWith;
 				"pretty", "html:target/cucumber-report/single",
 				"json:target/cucumber-report/single/rerun_cucumber.json"
 		},
-		glue = {"Cucumber_v4_8_0/Implementation"}
+		glue = {"Cucumber_v4_8_0/Implementation"},
+		extraGlue = "Cucumber_v4_8_0\\Hooks"
 )
 public class FailedScenarioRunner {
 }

@@ -10,6 +10,7 @@ import io.cucumber.testng.CucumberOptions;
 				monochrome = true,
 				features = "src/test/java/Cucumber_v4_5_2/Features",
 				glue = {"Cucumber_v4_5_2/Implementation"},
+				extraGlue = {"Cucumber_v4_5_2/Hooks"},
 				tags = {"@Baba"},
 				plugin = {
 				"progress",
@@ -20,7 +21,7 @@ import io.cucumber.testng.CucumberOptions;
 		        "json:target/cucumber-reports/cucumber.json",
 		        "pretty:target/cucumber-reports/cucumber-pretty.txt",
 		        "usage:target/cucumber-reports/cucumber-usage.json",
-						"rerun:target/cucumber-report/failed_scenarios.txt"
+				"rerun:target/cucumber-report/failed_scenarios.txt"
 				}
 		)
 

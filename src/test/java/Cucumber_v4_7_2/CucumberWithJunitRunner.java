@@ -12,6 +12,7 @@ import org.junit.runner.RunWith;
 				monochrome = true,
 				features = "src/test/java/Cucumber_v4_7_2/Features",
 				glue = {"Cucumber_v4_7_2/Implementation"},
+				extraGlue = "Cucumber_v4_8_0\\Hooks",
 				tags = {"@Baba1 or Baba2"},
 				plugin = {
 				"progress",
@@ -22,7 +23,7 @@ import org.junit.runner.RunWith;
 		        "json:target/cucumber-reports/cucumber.json",
 		        "pretty:target/cucumber-reports/cucumber-pretty.txt",
 		        "usage:target/cucumber-reports/cucumber-usage.json",
-						"rerun:target/cucumber-report/failed_scenarios.txt"
+				"rerun:target/cucumber-report/failed_scenarios.txt"
 				}
 		)
 public class CucumberWithJunitRunner
