@@ -1,0 +1,1 @@
+mvn clean install -DCucumberOptions="--glue Cucumber_v4_7_2.Implementation \ --plugin pretty path\to\featurefiles \ --threads 2 \ src/test/java/Cucumber_v4_7_2/Features \ --plugin json:report/cucumber.json \ --tags @baba \ --monochrome true"
