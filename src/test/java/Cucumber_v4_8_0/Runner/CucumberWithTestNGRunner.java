@@ -1,6 +1,9 @@
 package Cucumber_v4_8_0.Runner;
 /**
  * Runner Class For Running With TestNG.
+ *
+ * Parallel Through Command Line :-
+ * java -cp .;<path to cucumber jar folder>/* io.cucumber.core.cli.Main --threads 4 -g parallel parallel
  */
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;

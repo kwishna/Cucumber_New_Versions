@@ -8,6 +8,20 @@ import org.junit.runner.RunWith;
 
 //	import net.serenitybdd.cucumber.CucumberWithSerenity;
 
+/**
+ *
+ * To Run The Cucumber Parallel
+ * https://cucumber.io/docs/guides/parallel-execution/
+ * <plugin>
+ *     <groupId>org.apache.maven.plugins</groupId>
+ *     <artifactId>maven-surefire-plugin</artifactId>
+ *     <version>2.22.0</version>
+ *     <configuration>
+ *         <parallel>methods</parallel>
+ *         <useUnlimitedThreads>true</useUnlimitedThreads>
+ *     </configuration>
+ * </plugin>
+ */
 @RunWith(Cucumber.class)
 @CucumberOptions(
 				monochrome = true,
