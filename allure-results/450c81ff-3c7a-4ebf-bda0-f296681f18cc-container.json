@@ -1,0 +1,1 @@
+{"uuid":"450c81ff-3c7a-4ebf-bda0-f296681f18cc","name":"Scenario: Second Scenario","children":["eb201988-c815-4a0a-8e19-96f1ef7432ae"],"befores":[{"name":"StepDef.capture_scenario(Scenario)","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1577380000811,"stop":1577380000813}],"afters":[],"links":[],"start":1577380000810,"stop":1577380000818}
