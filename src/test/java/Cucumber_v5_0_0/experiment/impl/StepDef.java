@@ -1,9 +1,10 @@
-package Cucumber_v4_8_0.experiment.impl;
+package Cucumber_v5_0_0.experiment.impl;
 
-// import io.cucumber.core.api.Scenario; // Commented Because Of v5.0.0 Change
+import Cucumber_v5_0_0.experiment.impl.Student;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.Before;
 import io.cucumber.java8.En;
+import io.cucumber.java8.Scenario;
 
 public class StepDef implements En {
 
@@ -27,8 +28,8 @@ public class StepDef implements En {
 		});
 	}
 
-//	@Before
-//	public void capture_scenario(Scenario scenario){
-//		System.out.println(scenario.getName());
-//	}
+	@Before
+	public void capture_scenario(Scenario scenario){
+		System.out.println(scenario.getName());
+	}
 }

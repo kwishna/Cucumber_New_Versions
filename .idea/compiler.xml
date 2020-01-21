@@ -11,7 +11,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Cucumber_New_Version" target="11" />
+      <module name="Cucumber_New_Version" target="1.8" />
       <module name="CucumberWithSerenity" target="11" />
     </bytecodeTargetLevel>
   </component>

@@ -40,20 +40,26 @@
     </orderEntry>
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.12" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.hamcrest:hamcrest-core:1.3" level="project" />
-    <orderEntry type="library" name="Maven: io.cucumber:cucumber-java8:4.8.0" level="project" />
-    <orderEntry type="library" name="Maven: io.cucumber:cucumber-java:4.8.0" level="project" />
+    <orderEntry type="library" name="Maven: io.cucumber:cucumber-java8:5.0.0" level="project" />
+    <orderEntry type="library" name="Maven: io.cucumber:cucumber-core:5.0.0" level="project" />
+    <orderEntry type="library" name="Maven: io.cucumber:cucumber-gherkin:5.0.0" level="project" />
+    <orderEntry type="library" name="Maven: io.cucumber:cucumber-gherkin-vintage:5.0.0" level="project" />
+    <orderEntry type="library" name="Maven: io.cucumber:tag-expressions:2.0.4" level="project" />
+    <orderEntry type="library" name="Maven: io.cucumber:cucumber-expressions:8.3.1" level="project" />
+    <orderEntry type="library" name="Maven: io.cucumber:datatable:3.2.0" level="project" />
+    <orderEntry type="library" name="Maven: io.cucumber:cucumber-plugin:5.0.0" level="project" />
+    <orderEntry type="library" name="Maven: io.cucumber:docstring:5.0.0" level="project" />
     <orderEntry type="library" name="Maven: org.apiguardian:apiguardian-api:1.1.0" level="project" />
-    <orderEntry type="library" name="Maven: net.jodah:typetools:0.5.0" level="project" />
-    <orderEntry type="library" name="Maven: io.cucumber:cucumber-testng:4.8.0" level="project" />
-    <orderEntry type="library" name="Maven: io.cucumber:cucumber-core:4.8.0" level="project" />
-    <orderEntry type="library" name="Maven: io.cucumber:tag-expressions:1.1.1" level="project" />
-    <orderEntry type="library" name="Maven: io.cucumber:cucumber-expressions:7.0.2" level="project" />
-    <orderEntry type="library" name="Maven: io.cucumber:datatable:1.1.14" level="project" />
-    <orderEntry type="library" name="Maven: io.cucumber:datatable-dependencies:1.1.14" level="project" />
-    <orderEntry type="library" name="Maven: org.testng:testng:6.14.3" level="project" />
+    <orderEntry type="library" name="Maven: net.jodah:typetools:0.6.1" level="project" />
+    <orderEntry type="library" name="Maven: io.cucumber:cucumber-testng:5.0.0" level="project" />
+    <orderEntry type="library" name="Maven: org.testng:testng:7.1.0" level="project" />
     <orderEntry type="library" name="Maven: com.beust:jcommander:1.72" level="project" />
-    <orderEntry type="library" name="Maven: org.apache-extras.beanshell:bsh:2.0b6" level="project" />
-    <orderEntry type="library" name="Maven: io.cucumber:cucumber-junit:4.8.0" level="project" />
+    <orderEntry type="library" name="Maven: com.google.inject:guice:no_aop:4.1.0" level="project" />
+    <orderEntry type="library" name="Maven: javax.inject:javax.inject:1" level="project" />
+    <orderEntry type="library" name="Maven: aopalliance:aopalliance:1.0" level="project" />
+    <orderEntry type="library" name="Maven: com.google.guava:guava:19.0" level="project" />
+    <orderEntry type="library" name="Maven: org.yaml:snakeyaml:1.21" level="project" />
+    <orderEntry type="library" name="Maven: io.cucumber:cucumber-junit:5.0.0" level="project" />
     <orderEntry type="library" name="Maven: net.masterthought:maven-cucumber-reporting:5.0.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.maven:maven-plugin-api:3.6.2" level="project" />
     <orderEntry type="library" name="Maven: org.apache.maven:maven-model:3.6.2" level="project" />
@@ -61,7 +67,6 @@
     <orderEntry type="library" name="Maven: org.eclipse.sisu:org.eclipse.sisu.plexus:0.3.3" level="project" />
     <orderEntry type="library" name="Maven: javax.enterprise:cdi-api:1.0" level="project" />
     <orderEntry type="library" name="Maven: javax.annotation:jsr250-api:1.0" level="project" />
-    <orderEntry type="library" name="Maven: javax.inject:javax.inject:1" level="project" />
     <orderEntry type="library" name="Maven: org.eclipse.sisu:org.eclipse.sisu.inject:0.3.3" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.plexus:plexus-component-annotations:1.5.5" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.plexus:plexus-classworlds:2.6.0" level="project" />
@@ -91,14 +96,6 @@
     <orderEntry type="library" name="Maven: commons-io:commons-io:2.6" level="project" />
     <orderEntry type="library" name="Maven: org.jsoup:jsoup:1.12.1" level="project" />
     <orderEntry type="library" name="Maven: com.googlecode.owasp-java-html-sanitizer:owasp-java-html-sanitizer:20190610.1" level="project" />
-    <orderEntry type="library" name="Maven: com.google.guava:guava:27.1-jre" level="project" />
-    <orderEntry type="library" name="Maven: com.google.guava:failureaccess:1.0.1" level="project" />
-    <orderEntry type="library" name="Maven: com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava" level="project" />
-    <orderEntry type="library" name="Maven: com.google.code.findbugs:jsr305:3.0.2" level="project" />
-    <orderEntry type="library" name="Maven: org.checkerframework:checker-qual:2.5.2" level="project" />
-    <orderEntry type="library" name="Maven: com.google.errorprone:error_prone_annotations:2.2.0" level="project" />
-    <orderEntry type="library" name="Maven: com.google.j2objc:j2objc-annotations:1.1" level="project" />
-    <orderEntry type="library" name="Maven: org.codehaus.mojo:animal-sniffer-annotations:1.17" level="project" />
     <orderEntry type="library" name="Maven: commons-configuration:commons-configuration:1.10" level="project" />
     <orderEntry type="library" name="Maven: commons-lang:commons-lang:2.6" level="project" />
     <orderEntry type="library" name="Maven: com.aventstack:extentreports:4.0.9" level="project" />
@@ -125,5 +122,6 @@
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.25" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.apache.tika:tika-core:1.20" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.jooq:joor-java-8:0.9.10" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: io.cucumber:cucumber-java:4.7.2" level="project" />
   </component>
 </module>

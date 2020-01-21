@@ -1,13 +1,13 @@
-package Cucumber_v4_8_0.Hooks;
+package Cucumber_v5_0_0.Hooks;
 
-//import io.cucumber.core.api.Scenario; // 4.8.0 Onwards. Package Changed! Hence Commented!
 import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
+import io.cucumber.java8.Scenario;
 
 public class Hooks {
 
-/*	@After(order = 1)
+	@After(order = 1)
 	public void after1(Scenario s){
 		System.out.println("After Each Scenario order1");
 	}
@@ -25,5 +25,5 @@ public class Hooks {
 	@AfterStep
 	public void afterEachStep(Scenario s){
 		System.out.println("After Each Step");
-	}*/
+	}
 }

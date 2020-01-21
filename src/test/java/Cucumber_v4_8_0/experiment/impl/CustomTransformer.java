@@ -2,10 +2,10 @@ package Cucumber_v4_8_0.experiment.impl;
 
 import io.cucumber.core.api.TypeRegistry;
 import io.cucumber.core.api.TypeRegistryConfigurer;
-import io.cucumber.cucumberexpressions.ParameterByTypeTransformer;
+//import io.cucumber.cucumberexpressions.ParameterByTypeTransformer;
 import io.cucumber.cucumberexpressions.ParameterType;
 import io.cucumber.datatable.*;
-import io.cucumber.datatable.dependency.com.fasterxml.jackson.databind.ObjectMapper;
+//import io.cucumber.datatable.dependency.com.fasterxml.jackson.databind.ObjectMapper; // v5.0.0 changed package
 
 import java.lang.reflect.Type;
 import java.time.LocalDateTime;
@@ -15,6 +15,12 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+/**
+ * This Code Is Valid Below v5.0.0 Only
+ *
+ * Code Which Is Commented Is Due To Change In v5.0.0.
+ * Below Code Is Valid Before v5.0.0 In Cucumber
+ */
 public class CustomTransformer implements TypeRegistryConfigurer {
 
 	@Override
@@ -42,33 +48,35 @@ public class CustomTransformer implements TypeRegistryConfigurer {
 		 * }
 		 *
 		 */
-		typeRegistry.setDefaultParameterTransformer(new ParameterByTypeTransformer(){
+
+
+/*		typeRegistry.setDefaultParameterTransformer(new ParameterByTypeTransformer(){
 			private final ObjectMapper objectMapper = new ObjectMapper();
 			@Override
 			public Object transform(String fromValue, Type toValueType) throws Throwable {
 				return objectMapper.convertValue(fromValue, objectMapper.constructType(toValueType));
 			}
-		});
+		});*/
 
 
-		typeRegistry.setDefaultDataTableEntryTransformer(new TableEntryByTypeTransformer(){
+/*		typeRegistry.setDefaultDataTableEntryTransformer(new TableEntryByTypeTransformer(){
 			private final ObjectMapper objectMapper = new ObjectMapper();
 
 			@Override
 			public <T> T transform(Map<String, String> entry, Class<T> type, TableCellByTypeTransformer cellTransformer) {
 				return objectMapper.convertValue(entry, type);
 			}
-		});
+		});*/
 
 
-		typeRegistry.setDefaultDataTableCellTransformer(new TableCellByTypeTransformer (){
+/*		typeRegistry.setDefaultDataTableCellTransformer(new TableCellByTypeTransformer (){
 			private final ObjectMapper objectMapper = new ObjectMapper();
 
 			@Override
 			public <T> T transform(String value, Class<T> cellType) {
 				return objectMapper.convertValue(value, cellType);
 			}
-		});
+		});*/
 
 
 
@@ -88,12 +96,13 @@ public class CustomTransformer implements TypeRegistryConfigurer {
 			}
 		}));
 
-//		typeRegistry.defineDataTableType(new DataTableType(Student.class, new TableRowTransformer<Student>() {
-//			@Override
-//			public Student transform(List<String> row) {
-//				return Student.createStudentTwo(row);
-//			}
-//		}));
+/*		typeRegistry.defineDataTableType(new DataTableType(Student.class, new TableRowTransformer<Student>() {
+			@Override
+			public Student transform(List<String> row) {
+				return Student.createStudentTwo(row);
+			}
+		}));
+*/
 
 		typeRegistry.defineDataTableType(new DataTableType(Student.class, new TableTransformer<Student>() {
 			@Override
