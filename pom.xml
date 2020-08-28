@@ -110,6 +110,138 @@
 
 
 		<!--		<dependency>
+=======
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>Cucumber</groupId>
+    <artifactId>Cucumber_New_Version_2</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>Cucumber_New_Version_2</name>
+    <url>http://maven.apache.org</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compile.encoding>UTF-8</maven.compile.encoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <aspectj.version>1.8.10</aspectj.version>
+    </properties>
+
+    <dependencies>
+
+        <!-- Below : For Cucumber 4.7.2
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+        -->
+
+
+        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.6.2</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>5.6.2</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-testng</artifactId>
+            <version>5.0.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>6.4.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java8 -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java8</artifactId>
+            <version>6.4.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/net.masterthought/maven-cucumber-reporting -->
+        <dependency>
+            <groupId>net.masterthought</groupId>
+            <artifactId>maven-cucumber-reporting</artifactId>
+            <version>5.3.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/net.masterthought/maven-cucumber-reporting -->
+        <dependency>
+            <groupId>net.masterthought</groupId>
+            <artifactId>maven-cucumber-reporting</artifactId>
+            <version>5.0.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>5.0.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.trivago.rta</groupId>
+            <artifactId>cluecumber-report-plugin</artifactId>
+            <version>2.3.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>de.monochromata.cucumber</groupId>
+            <artifactId>reporting-plugin</artifactId>
+            <version>4.0.4</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports-cucumber4-adapter -->
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports-cucumber4-adapter</artifactId>
+            <version>1.2.1</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-cucumber-jvm -->
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-cucumber-jvm</artifactId>
+            <version>2.13.5</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-cucumber4-jvm -->
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-cucumber4-jvm</artifactId>
+            <version>2.13.5</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.codehaus.mojo/exec-maven-plugin -->
+        <dependency>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>exec-maven-plugin</artifactId>
+            <version>1.6.0</version>
+        </dependency>
+
+
+        <!--		<dependency>
                     <groupId>com.aventstack</groupId>
                     <artifactId>extentreports-cucumber4-adapter</artifactId>
                     <scope>system</scope>
@@ -117,122 +249,170 @@
                     <systemPath>${basedir}\src\extentreports-cucumber4-adapter-1.0.8.jar</systemPath>
                 </dependency>-->
 
-	</dependencies>
+        <!-- https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber6-adapter -->
+        <dependency>
+            <groupId>tech.grasshopper</groupId>
+            <artifactId>extentreports-cucumber6-adapter</artifactId>
+            <version>1.1.0</version>
+        </dependency>
 
-	<build>
-		<plugins>
 
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.22.2</version>
-				<!-- <configuration> <suiteXmlFiles> <suiteXmlFile>testng.xml</suiteXmlFile> 
-					</suiteXmlFiles> </configuration> -->
-				<configuration>
-					<skipTests>true</skipTests>
-				</configuration>
-			</plugin>
+    </dependencies>
 
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-failsafe-plugin</artifactId>
-				<version>2.22.2</version>
-				<configuration>
-						<systemPropertyVariables>
-							<extent.reporter.html.start>true</extent.reporter.html.start>
-							<extent.reporter.html.out>target/HtmlReport/ExtentHtml.html</extent.reporter.html.out>
-						</systemPropertyVariables>
-					<!-- OR, -DargLine="-Dextent.reporter.html.start=true -Dextent.reporter.html.out=test-output/HtmlReport/ExtentHtml.html" -->
+    <build>
+        <testSourceDirectory>src/test/java</testSourceDirectory>
 
-					<includes>CucumberWithJunitRunnerExperiment.java</includes>
-					<!-- <includes> <include>testng.xml</include> </includes> -->
-					<argLine>-Xmx512m</argLine>
-					<parallel>classes</parallel>
-					<forkCount>3</forkCount>
-					<threadCount>25</threadCount>
-					<reuseForks>true</reuseForks>
+        <plugins>
 
-<!--					<argLine>-->
-<!--						-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"-->
-<!--						-Dcucumber.options="&#45;&#45;plugin io.qameta.allure.cucumber4jvm.AllureCucumber4Jvm"-->
-<!--					</argLine>-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.2</version>
+                <configuration>
+                    <!--<suiteXmlFiles>
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>-->
+                    <skipTests>true</skipTests>
+                </configuration>
+            </plugin>
 
-				</configuration>
-				<executions>
-					<execution>
-						<id>Suite</id>
-						<phase>verify</phase>
-						<goals>
-							<goal>integration-test</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <version>2.22.2</version>
+                <configuration>
 
-			<plugin>
-				<groupId>net.masterthought</groupId>
-				<artifactId>maven-cucumber-reporting</artifactId>
-<!--				<version>4.7.0</version>-->
-<!--				<version>3.0.0</version>-->
-				<version>5.0.0</version>
-				<executions>
-					<execution>
-						<id>execution</id>
-						<phase>verify</phase>
-						<goals>
-<!--							<goal>generate</goal>-->
-						</goals>
-						<configuration>
-							<projectName>Serenity_New_Version</projectName>
-							<outputDirectory>${project.build.directory}/cucumber-reports/maven-cucumber-report</outputDirectory>
-							<inputDirectory>${project.build.directory}/cucumber-reports</inputDirectory>
-							<!--<cucumberOutput>${project.build.directory}/target/cucumber-reports/CucumberTestReport.json</cucumberOutput>-->
-							<jsonFiles>
-								<!--<param>${project.build.directory}/target/cucumber-reports/cucumber.json</param>-->
-								<param>target/cucumber-reports/cucumber.json</param>
-							</jsonFiles>
-							<projectName>Krishna Cucumber</projectName>
-							<treatPendingAsFailed>true</treatPendingAsFailed>
-							<buildNumber>1</buildNumber>
-							<checkBuildResult>false</checkBuildResult>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
+                    <systemPropertyVariables>
+                        <extent.reporter.html.start>true</extent.reporter.html.start>
+                        <extent.reporter.html.out>target/HtmlReport/ExtentHtml.html</extent.reporter.html.out>
+                    </systemPropertyVariables>
+                    <!-- OR, -DargLine="-Dextent.reporter.html.start=true -Dextent.reporter.html.out=test-output/HtmlReport/ExtentHtml.html" -->
 
-<!--			<plugin>
-				<groupId>com.trivago.rta</groupId>
-				<artifactId>cluecumber-report-plugin</artifactId>
-				<version>2.3.1</version>
-				<executions>
-					<execution>
-						<id>report</id>
-						<phase>post-integration-test</phase>
-						<goals>
-							<goal>reporting</goal>
-						</goals>
-					</execution>
-				</executions>
-				<configuration>
-&lt;!&ndash;					&lt;!&ndash; https://github.com/trivago/cluecumber-report-plugin
-					learn more reportings : https://github.com/AshisRaj/cucelastic-maven-plugin
-					Run : mvn cluecumber-report:reporting
-					Run : mvn cluecumber-report:reporting -DsourceJsonReportDirectory=path_to_json_files -Dkey=value
-					&ndash;&gt;&ndash;&gt;
-					<sourceJsonReportDirectory>target/cucumber-reports</sourceJsonReportDirectory>
-					<generatedHtmlReportDirectory>target/test-output/clueCumberReport</generatedHtmlReportDirectory>
-					<customParametersFile>src/test/resources/customParameters.properties</customParametersFile>
-					<failScenariosOnPendingOrUndefinedSteps>false</failScenariosOnPendingOrUndefinedSteps>
-					<expandBeforeAfterHooks>true</expandBeforeAfterHooks>
-					<expandStepHooks>true</expandStepHooks>
-					<expandDocStrings>true</expandDocStrings>
-					<customPageTitle>My Report</customPageTitle>
-					<customCss>src/test/resources/custom.css</customCss>
-					<customStatusColorPassed>#017FAF</customStatusColorPassed>
-					<customStatusColorFailed>#C94A38</customStatusColorFailed>
-					<customStatusColorSkipped>#F48F00</customStatusColorSkipped>
-				</configuration>
-			</plugin> -->
-		</plugins>
-	</build>
+                    <!-- <includes>CucumberWithJunitRunnerExperiment.java</includes>-->
+                    <includes>
+                        <include>testng.xml</include>
+                    </includes>
+                    <argLine>-Xmx512m</argLine>
+                    <parallel>classes</parallel>
+                    <forkCount>3</forkCount>
+                    <threadCount>25</threadCount>
+                    <reuseForks>true</reuseForks>
+
+                    <!--					<argLine>
+                                                -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+                                                -Dcucumber.options="- -plugin io.qameta.allure.cucumber4jvm.AllureCucumber4Jvm"
+                                            </argLine>
+                    -->
+
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>Suite</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>integration-test</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>net.masterthought</groupId>
+                <artifactId>maven-cucumber-reporting</artifactId>
+                <version>5.3.0</version>
+                <executions>
+                    <execution>
+                        <id>execution</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <!--							<goal>generate</goal>-->
+                        </goals>
+                        <configuration>
+                            <projectName>Cucumber_New_Version_2</projectName>
+                            <outputDirectory>${project.build.directory}/cucumber-reports/maven-cucumber-report
+                            </outputDirectory>
+                            <inputDirectory>${project.build.directory}/cucumber-reports</inputDirectory>
+                            <!--<cucumberOutput>${project.build.directory}/target/cucumber-reports/CucumberTestReport.json</cucumberOutput>-->
+                            <jsonFiles>
+                                <!--<param>${project.build.directory}/target/cucumber-reports/cucumber.json</param>-->
+                                <param>target/cucumber-reports/cucumber.json</param>
+                            </jsonFiles>
+                            <projectName>Krishna Cucumber</projectName>
+                            <treatPendingAsFailed>true</treatPendingAsFailed>
+                            <buildNumber>1</buildNumber>
+                            <checkBuildResult>false</checkBuildResult>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!--			<plugin>
+                            <groupId>com.trivago.rta</groupId>
+                            <artifactId>cluecumber-report-plugin</artifactId>
+                            <version>2.3.1</version>
+                            <executions>
+                                <execution>
+                                    <id>report</id>
+                                    <phase>post-integration-test</phase>
+                                    <goals>
+                                        <goal>reporting</goal>
+                                    </goals>
+                                </execution>
+                            </executions>
+                            <configuration>
+            &lt;!&ndash;					&lt;!&ndash; https://github.com/trivago/cluecumber-report-plugin
+                                learn more reportings : https://github.com/AshisRaj/cucelastic-maven-plugin
+                                Run : mvn cluecumber-report:reporting
+                                Run : mvn cluecumber-report:reporting -DsourceJsonReportDirectory=path_to_json_files -Dkey=value
+                                &ndash;&gt;&ndash;&gt;
+                                <sourceJsonReportDirectory>target/cucumber-reports</sourceJsonReportDirectory>
+                                <generatedHtmlReportDirectory>target/test-output/clueCumberReport</generatedHtmlReportDirectory>
+                                <customParametersFile>src/test/resources/customParameters.properties</customParametersFile>
+                                <failScenariosOnPendingOrUndefinedSteps>false</failScenariosOnPendingOrUndefinedSteps>
+                                <expandBeforeAfterHooks>true</expandBeforeAfterHooks>
+                                <expandStepHooks>true</expandStepHooks>
+                                <expandDocStrings>true</expandDocStrings>
+                                <customPageTitle>My Report</customPageTitle>
+                                <customCss>src/test/resources/custom.css</customCss>
+                                <customStatusColorPassed>#017FAF</customStatusColorPassed>
+                                <customStatusColorFailed>#C94A38</customStatusColorFailed>
+                                <customStatusColorSkipped>#F48F00</customStatusColorSkipped>
+                            </configuration>
+                        </plugin> -->
+
+     <!-- mvn clean compile exec:java -Dexec.mainClass="io.cucumber.core.cli.Main" -Dexec.args="myArg1 myArg2" -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>1.6.0</version>
+                <executions>
+                    <execution>
+                        <id>execution by plugin</id>
+                        <phase>integration-test</phase>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <classpathScope>test</classpathScope>
+                    <mainClass>io.cucumber.core.cli.Main</mainClass>
+                    <arguments>
+                        <argument>--glue</argument>
+                        <argument>Cucumber_v6_4_0/Implementation Cucumber_v6_4_0/Hooks</argument>
+
+                        <argument>--snippets</argument>
+                        <argument>camelcase</argument>
+
+                        <argument>--plugin</argument>
+                        <argument>html:target/cucumber.html</argument>
+
+                        <argument>--tags</argument>
+                        <argument>@Baba3</argument>
+                        <argument>src/test/java/Cucumber_v6_4_0/Features</argument>
+                    </arguments>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>

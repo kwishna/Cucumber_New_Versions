@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/CucumberWithSerenity.iml" filepath="$PROJECT_DIR$/CucumberWithSerenity.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Cucumber_New_Version.iml" filepath="$PROJECT_DIR$/Cucumber_New_Version.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Cucumber_New_Version_2.iml" filepath="$PROJECT_DIR$/Cucumber_New_Version_2.iml" />
     </modules>
   </component>
 </project>
