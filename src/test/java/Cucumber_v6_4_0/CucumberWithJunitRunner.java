@@ -31,16 +31,16 @@ import org.junit.runner.RunWith;
 				tags = "@Baba3",
 //				name = {".*"}, // Matching Name Scenario Will Run
 				plugin = {
-				"progress",
-//				"summary",
-//		        "pretty",
-		        "usage:target/cucumber-reports/cucumber-usage.json",
-		        "html:target/cucumber-reports/cucumber-pretty",
-		        "json:target/cucumber-reports/cucumber.json",
-		        "pretty:target/cucumber-reports/cucumber-pretty.txt",
-				"timeline:/cucumber-reports/",
-		        "usage:target/cucumber-reports/cucumber-usage.json",
-				"rerun:target/cucumber-reports/failures/failed_scenarios.txt"
+					"progress",
+//					"summary",
+//		        	"pretty",
+					"usage:target/cucumber-reports/cucumber-usage.json",
+					"html:target/cucumber-reports/cucumber-pretty",
+					"json:target/cucumber-reports/cucumber.json",
+					"pretty:target/cucumber-reports/cucumber-pretty.txt",
+					"timeline:/cucumber-reports/",
+					"usage:target/cucumber-reports/cucumber-usage.json",
+					"rerun:target/cucumber-reports/failures/failed_scenarios.txt"
 				}
 		)
 
